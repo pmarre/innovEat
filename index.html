@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>InnovEat</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-        <nav class="nav--web">
+    <header class="header--hero-image">
+        <div class="nav--mobile__background"> </div>
+        <nav class="nav--mobile wrapper">
+            <div class="nav--mobile-stack">
+                <div class="nav--bar bar-1"></div>
+                <div class="nav--bar bar-2"></div>
+                <div class="nav--bar bar-3"></div>
+            </div>
+            <div class="nav--web__logo">LOGO</div>
+        </nav>
+   
+        <nav class="nav--web wrapper">
             <div class="nav--web__logo">LOGO</div>
             <ul class="nav--web__pages">
-                <li class="nav--web__item">Home</li>
-                <li class="nav--web__item">About InnovEat</li>
-                <li class="nav--web__item">Shop InnovEat</li>
-                <li class="nav--web__item">Contact</li>
+                <li class="nav--web__item"><a href="#">Home</a></li>
+                <li class="nav--web__item"><a href="#">Shop InnovEat</a></li>
+                <li class="nav--web__item"><a href="#">About InnovEat</a></li>
+                <li class="nav--web__item"><a href="#">Contact Us</a></li>
             </ul>
         </nav>
-        <div class="header"></div>
+        <div class="header__title wrapper">
+          <h1 class="header__title__p">This is InnovEat. We are a product that does this and that. Give us a try and enjoy what we can do for you.</h1>
+          <a href="#" class="btn--shop-now">Shop InnovEat</a>
+        </div>   
     </header>
     <section id="introduction">
-
+       <div class="intro--container wrapper">
+           <div class="intro__text">
+               <h2 class="intro__title">Introducing: InnovEat</h2>
+               <p class="intro__p">This is InnovEat. This is what we do. This is who we are. Come try one of are many delicious products.</p>
+               <a href="#" class="btn--shop-now btn--intro">Get Yours</a>
+           </div>
+           <div class="intro__image">Image</div>
+       </div>
     </section> 
     <section id="shop">
-
+        <div class="shop--container wrapper">
+            <div class="shop--header">
+                <h2 class="shop__title">shop innovEat</h2>
+                <a href="#" class="shop__all-products">shop all products</a>
+            </div>
+            <div class="shop--products">
+                <div class="shop--item">
+                    <div class="shop--item__image">Image</div>
+                   <a href="#" class="btn--shop-item">Beet Carrot Soup</a>
+                </div>
+                <div class="shop--item">
+                    <div class="shop--item__image">Image</div>
+                    <a href="#" class="btn--shop-item">Coconut Chatni</a>
+                </div>
+                <div class="shop--item">
+                    <div class="shop--item__image">Image</div>
+                    <a href="#" class="btn--shop-item">Guava Chili</a>
+                </div>
+                <div class="shop--item">
+                    <div class="shop--item__image">Image</div>
+                    <a href="#" class="btn--shop-item">Dried Mango</a>
+                </div>
+                <div class="shop--item">
+                        <div class="shop--item__image">Image</div>
+                        <a href="#" class="btn--shop-item">Lentil Rice</a>
+                    </div>
+                    <div class="shop--item">
+                        <div class="shop--item__image">Image</div>
+                        <a href="#" class="btn--shop-item">Coconut Chips</a>
+                    </div>
+                    <div class="shop--item">
+                        <div class="shop--item__image">Image</div>
+                        <a href="#" class="btn--shop-item">Spinach Curry</a>
+                    </div>
+                    <div class="shop--item">
+                        <div class="shop--item__image">Image</div>
+                        <a href="#" class="btn--shop-item">Sprouted Mung Bean Soup</a>
+                    </div>
+            </div>
+        </div>
     </section>  
     <section id="learn_more">
 
@@ -32,5 +95,15 @@
     <footer>
 
     </footer>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
   </body>
 </html>

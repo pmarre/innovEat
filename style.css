@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+}
+
+*:focus {
+    outline: none;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header--hero-image {
+    width: 100vw;
+    height: 80vh;
+    background-color: coral;
+    position: relative;
+}
+
+.nav--mobile__background {
+    width: 100vw;
+    height: 0;
+    z-index: 100;
+    position: fixed;
+    display: fixed;
+    
+    background-color: lightseagreen;
+}
+
+.nav--mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+
+.nav--mobile-stack {
+    margin-right: 20px;
+}
+
+.nav--bar {
+    height: 2px;
+    width: 30px;
+    background-color: #000;
+    margin-bottom: 5px;
+}
+
+
+.nav--web {
+    display: none;
+}
+
+.header__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+
+.header__title__p {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+    font-family: "Alfa Slab One", cursive;
+    line-height: 1.5;
+}
+
+.btn--shop-now {
+    color: lightseagreen;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    padding: 0 2rem;
+    min-width: 200px;
+    height: 60px;
+    outline: 3px solid lightseagreen;
+    line-height: 60px;
+    box-shadow: 10px 12px lightseagreen;
+    max-width: 225px;
+    margin: 20px auto 0;
+}
+
+.btn--shop-now:hover {
+    box-shadow: 8px 10px lightseagreen;
+} 
+
+.intro--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.intro__image {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    order: 1;
+    margin: 0 auto;
+}
+
+.intro__text {
+    order: 2;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.intro__title {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-family: "Alfa Slab One", cursive;
+}
+
+.intro__p {
+    margin: 20px 0;
+}
+
+
+.shop--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shop--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.shop__title {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-family: "Alfa Slab One", cursive;
+}
+
+.shop__all-products {
+    text-align: right;
+    color: lightseagreen;
+    margin: auto 0;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.shop--products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 40px;
+    
+}
+
+.shop--item {
+    margin: 20px 0;
+}
+
+.shop--item:nth-of-type(1n+4) {
+    display: none;
+}
+
+.shop--item__image {
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+}
+
+.btn--shop-item {
+    display: block;
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid lightseagreen;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    color: lightseagreen;
+    font-size: .75rem;
+}
+
+
+@media only screen and (min-width: 750px) {
+  .nav--mobile {
+      display: none;
+  }
+
+    
+  .nav--web {
+      padding: 30px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .nav--web__logo {
+      flex: 1;
+  }
+
+  .nav--web__pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 2;
+  }
+
+  .nav--web__item {
+      padding: 10px;
+  }
+
+  .header__title {
+    width: 50vw;
+}
+
+  .header__title__p {
+    font-size: 2rem;
+}
+
+.intro--container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro__image {
+    width: 40vw;
+    height: 40vw;
+    order: 2;
+    margin: 0;
+}
+
+.intro__text {
+    order: 1;
+    text-align: left;
+    width: 30vw;
+    margin: 0;
+}
+
+.intro__title {
+    font-size: 3rem;
+}
+
+.intro__p {
+    margin: 20px 0;
+}
+
+.btn--intro {
+    margin: 0;
+}
+
+
+.shop--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.shop--header {
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.shop__title {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.shop__all-products {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.shop--products {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shop--item__image {
+    width: 390px;
+    height: 390px;
+}
+
+.shop--item:nth-of-type(1n+4) {
+    display: block;
+}
+
+
+
+
+}
