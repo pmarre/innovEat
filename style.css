@@ -23,10 +23,10 @@
 
 .nav--mobile__background {
     width: 100vw;
-    height: 100vh;
+    height: 0;
     z-index: 100;
     position: fixed;
-    display: none;
+    display: fixed;
     
     background-color: lightseagreen;
 }
