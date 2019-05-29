@@ -240,6 +240,105 @@ a {
     width: 200px;
     background-color: coral;
     margin: 30px 10px;
+    position: relative;
+}
+
+.insta-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color:gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.footer--sign-up {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer--sign-up__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#footer--title {
+    font-family: "Bowlby One SC", cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.email {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.email--submit {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    background-color: lightseagreen;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.fab {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer--facebook {
+    background-color: #3b5998;
+}
+
+.footer--twitter {
+    background-color: #1da1f2;
+}
+
+.footer--instagram {
+    background-image: radial-gradient(circle at 32% 100%, #feda75  5%, #fa7e1e 35%, #d62976 50%, #962fbf 65%,  #4f5bd5);
+}
+
+.footer--lower {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 10vw;
+}
+
+.footer--logo,
+.footer--social-icons {
+    flex: 1;
+    margin: auto 0;
+}
+
+.footer--nav {
+    flex: 2;
+    font-size: .75rem;
 }
 
 @media only screen and (min-width: 750px) {
@@ -258,6 +357,7 @@ a {
 
   .nav--web__logo {
       flex: 1;
+      margin: auto 0;
   }
 
   .nav--web__pages {
