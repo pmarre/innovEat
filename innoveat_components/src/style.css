@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header--hero-image {
+    width: 100%;
+    height: 80vh;
+    background-image: url("https://source.unsplash.com/user/monaeedndra/vC8wj_Kphak");
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 100%;
+}
+
+.nav--mobile__background {
+    width: 0;
+    height: 10vh;
+    max-width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: fixed;
+    
+    background-color: lightseagreen;
+    transition: all .5s;
+}
+
+.nav--mobile__items {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    position: relative;
+    transition: all 2s;
+}
+
+.nav--mobile__item {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.nav--mobile__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.nav--mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+
+.nav--mobile-stack {
+    margin-right: 20px;
+}
+
+.nav--bar {
+    height: 2px;
+    width: 30px;
+    background-color: #000;
+    margin-bottom: 5px;
+}
+
+
+.nav--web {
+    display: none;
+}
+
+.header__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+
+.header__title__p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+    font-family: "Bowlby One SC", cursive;
+    line-height: 1.5;
+}
+
+.btn--shop-now {
+    color: lightseagreen;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    padding: 0 2rem;
+    min-width: 200px;
+    height: 60px;
+    outline: 3px solid lightseagreen;
+    line-height: 60px;
+    box-shadow: 10px 12px lightseagreen;
+    max-width: 225px;
+    margin: 20px auto 0;
+}
+
+.btn--shop-now:hover {
+    box-shadow: 8px 10px lightseagreen;
+} 
+
+.intro--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.intro__image {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    order: 1;
+    margin: 0 auto;
+}
+
+.intro__text {
+    order: 2;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.intro__title {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-family: "Bowlby One SC", cursive;
+}
+
+.intro__p {
+    margin: 20px 0;
+}
+
+
+.shop--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shop--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.shop__title {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-family: "Bowlby One SC", cursive;
+}
+
+.shop__all-products {
+    text-align: right;
+    color: lightseagreen;
+    margin: auto 0;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.shop--products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 40px;
+    
+}
+
+.shop--item {
+    margin: 20px 0;
+}
+
+.shop--item:nth-of-type(1n+4) {
+    display: none;
+}
+
+.shop--item__image {
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+}
+
+.btn--shop-item {
+    display: block;
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid lightseagreen;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    color: lightseagreen;
+    font-size: .75rem;
+}
+
+#follow_us {
+    margin: 40px auto;
+}
+.follow--follow_us {
+    font-size: 2rem;
+    font-family: "Bowlby One SC", cursive;
+}
+
+.instagram_feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.insta-pic {
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    margin: 30px 10px;
+    position: relative;
+}
+
+.insta-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color:gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.footer--sign-up {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer--sign-up__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#footer--title {
+    font-family: "Bowlby One SC", cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.email {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.email--submit {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    background-color: lightseagreen;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.fab {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer--facebook {
+    background-color: #3b5998;
+}
+
+.footer--twitter {
+    background-color: #1da1f2;
+}
+
+.footer--instagram {
+    background-image: radial-gradient(circle at 32% 100%, #feda75  5%, #fa7e1e 35%, #d62976 50%, #962fbf 65%,  #4f5bd5);
+}
+
+.footer--lower {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 10vw;
+}
+
+.footer--logo,
+.footer--social-icons {
+    flex: 1;
+    margin: auto 0;
+}
+
+.footer--nav {
+    flex: 2;
+    font-size: .75rem;
+}
+
+@media only screen and (min-width: 750px) {
+  .nav--mobile {
+      display: none;
+  }
+
+    
+  .nav--web {
+      padding: 30px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .nav--web__logo {
+      flex: 1;
+      margin: auto 0;
+  }
+
+  .nav--web__pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 2;
+  }
+
+  .nav--web__item {
+      padding: 10px;
+  }
+
+  .header__title {
+    width: 50vw;
+}
+
+  .header__title__p {
+    font-size: 2rem;
+}
+
+.intro--container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro__image {
+    width: 40vw;
+    height: 40vw;
+    order: 2;
+    margin: 0;
+}
+
+.intro__text {
+    order: 1;
+    text-align: left;
+    width: 30vw;
+    margin: 0;
+}
+
+.intro__title {
+    font-size: 3rem;
+}
+
+.intro__p {
+    margin: 20px 0;
+}
+
+.btn--intro {
+    margin: 0;
+}
+
+
+.shop--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.shop--header {
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.shop__title {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.shop__all-products {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.shop--products {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shop--item__image {
+    width: 390px;
+    height: 390px;
+}
+
+.shop--item:nth-of-type(1n+4) {
+    display: block;
+}
+
+
+
+
+}
